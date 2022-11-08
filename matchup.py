@@ -29,6 +29,8 @@ def get_random_game():
 def get_game_for_players(players):
     actual_vetos = set()
     for player in players:
+        if player not in vetos:
+            print(f'No vetoes found for "{player}".')
         actual_vetos = actual_vetos.union(vetos.get(player,set()))
     return get_random_game_no_veto(actual_vetos)
 
