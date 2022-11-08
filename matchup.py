@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from game_data import games
 from veto_data import vetos
 import random
